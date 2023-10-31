@@ -48,15 +48,29 @@
         <a class="btn" href="mailto:marivignesh242004@gmail.com">CONTACT ME</a>
       </div>
     </div>
-
+      <img src="scroll-up.png" height:50px width:50px>
 
     <div class="bottom-container">
       <a class="footer-link" href="https://www.linkedin.com/marivignesh007">LinkedIn</a>
       <a class="footer-link" href="https://www.instagram.com/mari_vignesh_007/">Instagram</a>
       <p class="copyright">©2023 Mari Vignesh</p>
     </div>
-
-
-
+	  
   </body>
+<script>
+	 window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll").style.display = "block";
+    } else {
+        document.getElementById("scroll").style.display = "none";
+    }
+}
+
+function topFunction() {
+        window.scrollTo({top:0, behavior: 'smooth'});
+     }
+       
+</script>	  
 </html>
